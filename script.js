@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function changeWeatherImage(weatherCondition) {
-    let imgSrc = "default.png";
+    let imgSrc = "mist.png";
 
     switch (weatherCondition) {
       case "Clouds":
@@ -69,14 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
       case "Rain":
         imgSrc = "rain.png";
         break;
-      case "Mist":
-        imgSrc = "mist.png";
+  
         break;
       case "Snow":
         imgSrc = "snow.png";
         break;
       default:
-        imgSrc = "default.png";
+        imgSrc = "mist.png";
     }
 
     if (weatherImg) weatherImg.src = imgSrc;
